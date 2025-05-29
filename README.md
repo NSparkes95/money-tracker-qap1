@@ -58,7 +58,6 @@ testPaymentReducesBalance()	Payments reduce outstanding balance
 testMultipleChargesAndPayments()	Chaining logic works correctly
 testNegativeChargeDoesNotApply()	Edge case for negative amounts
 
-📸 Insert screenshot here of IntelliJ test results
 ![Tests Passed](screenshots/test-passed.png)
 
 🔁 Clean Code Practices Used
@@ -90,12 +89,12 @@ Edit
 public String toString() {
     return String.format("$%.2f", amount);
 }
-📸 Add 3 screenshots here:
-![Clean Code 1](screenshots/clean1.png)
 
-![Clean Code 2](screenshots/clean2.png)
+![Clean Code 2](screenshots/clean-code-1.png)
 
-![Clean Code 3](screenshots/clean3.png)
+![Clean Code 2](screenshots/clean-code-2.png)
+
+![Clean Code 3](screenshots/clean-code-3.png)
 
 🤖 GitHub Actions (CI/CD)
 CI configured to run tests on every pull request.
@@ -121,7 +120,7 @@ jobs:
           distribution: 'temurin'
       - name: Build and Test
         run: mvn clean verify
-📸 Add screenshot here:
+
 ![GitHub Actions](screenshots/github-actions.png)
 
 📦 Maven Dependencies
@@ -152,8 +151,6 @@ Pull Request merged into main
 
 GitHub Actions triggered
 
-📸 Screenshot suggestion:
-![PR](screenshots/pr.png)
 
 🐛 Problems Encountered
 Issue	How It Was Solved
@@ -161,8 +158,3 @@ Maven plugin not found	Changed to stable version 2.22.2
 JUnit test classes not detected	Moved to src/test/java, added Surefire plugin
 GitHub Actions didn't run	Fixed .yml path and pull request trigger
 IntelliJ didn't run tests	Verified Maven dependency and test folder setup
-
-🔗 Submission Info
-GitHub Repo: https://github.com/YOUR_USERNAME/money-tracker-qap1
-
-📸 Add screenshots in /screenshots and update file paths in this README.
